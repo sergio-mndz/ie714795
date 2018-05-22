@@ -16,7 +16,7 @@ void encriptar(char cadena[50], int desplazamiento){
 	for(int i = 0; i<strlen(cadena);i++){
 		if((cadena[i]>64 && cadena[i]<91)){
 			if((cadena[i]-desplazamiento)<65){
-				cadena[i] = cadena[i]+desplazamiento+26;
+				cadena[i] = cadena[i]-desplazamiento+26;
 			} else {
 				cadena[i] = cadena[i]-desplazamiento;
 			}
