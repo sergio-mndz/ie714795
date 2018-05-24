@@ -60,8 +60,10 @@ int buscarExp(int n, int cont, Alumno regis[20]){
 }
 
 void eliminarRegistro(int contador, int posicion){
+	Alumno *punter;
+	punter = &alumnos[0];
 	for(int i = posicion; i<contador; i++){
-		alumnos[i] = alumnos[i+1];
+		*(punter+i) = *(punter+i+1);
 	}
 }
 
