@@ -33,7 +33,6 @@ void registrar(contador){
 	printf("Edad del alumno: ");
 	scanf("%d", &pointer->edad);
 	printf("\n");
-	alumnos[contador]=*pointer;
 }
 
 void imprimir(int contador, Alumno alumnos[20]){
